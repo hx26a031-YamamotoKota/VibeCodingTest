@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Mochiy+Pop+One&family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Fredoka", "Mochiy Pop One", "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-japanese: "Mochiy Pop One", sans-serif;
+  --font-display: "Fredoka", "Mochiy Pop One", sans-serif;
+}
+
+@keyframes float-up {
+  0% {
+    transform: translateY(0) scale(0.8);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+    transform: translateY(-20px) scale(1.1);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-80px) scale(0.9);
+    opacity: 0;
+  }
+}
+
+@keyframes drop-sparkle {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(30px) scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes bubble-pop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes background-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-float-up {
+  animation: float-up 1.6s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
+}
+
+.animate-bubble-pop {
+  animation: bubble-pop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+/* カスタムスクロールバーをお菓子風(パステルピンク系)に */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fdf2f8; /* pink-50 */
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb {
+  background: #fbcfe8; /* pink-200 */
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f9a8d4; /* pink-300 */
+}

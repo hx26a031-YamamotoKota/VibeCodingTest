@@ -1,0 +1,6 @@
+{
+  "name": "Sweetris (お菓子テトリス)",
+  "description": "テトロミノがカラフルで美味しそうなお菓子になった、ポップで楽しいテトリスゲームです。様々なスイーツブロックを集めてハイスコアを目指そう！",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
